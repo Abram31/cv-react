@@ -1,0 +1,187 @@
+$background-name: rgba(45, 125, 136, 1);
+$background-contacts-about: rgba(4, 12, 41, 1);
+
+
+
+header {
+    position: relative;
+    height: 45rem;
+    color: whitesmoke;
+    font-family: 'Exo 2';
+    letter-spacing: 0.15em;
+
+    .header_wrapper-name-profession {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        clip-path: polygon(-17% 0%, 100% 0%, 100% 100%, 150% 100%);
+        margin: 0;
+        background-color: $background-name;
+        text-align: end;
+        border-radius: 205px;
+
+        .name {
+            font-size: 3.2rem;
+            padding: 2rem 5rem 0 0;
+        }
+
+        .profession {
+            font-size: 2rem;
+            padding: 0 5rem 0 0;
+        }
+    }
+
+    .header_wrapper-contacts {
+        position: absolute;
+        height: 90%;
+        width: 50%;
+        bottom: 0rem;
+        clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0% 5%);
+        margin: 0;
+        background-color: $background-contacts-about;
+
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 127px 0 0px 127px;
+
+        .wrapper-contacts__contacts {
+
+            & h3 {
+                font-size: 2rem;
+            }
+        }
+
+        .wrapper-contacts-about-me__list-contacts {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .list-contacts__contact {
+                color: whitesmoke;
+                font-size: 1.4rem;
+                display: flex;
+                cursor: pointer;
+                transition: .4s;
+                transition-timing-function: linear;
+                // transition-property: color;
+
+                &:active {
+                    transform: scale(0.8);
+                }
+                &:hover {
+                    transform: rotate3d(1, 1, 1, 10deg) scale(1.2) ;
+                }
+
+            }
+
+            .GitHub,
+            .instagram,
+            .telegram,
+            .mail,
+            .phone,
+            .linkedin {
+                &::before {
+                    content: '';
+                    background-repeat: no-repeat;
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+
+            .GitHub::before {
+                background-image: url(../assets/icons/github.svg);
+            }
+
+            .instagram:before {
+                background-image: url(../assets/icons/instagram.svg);
+            }
+
+            .telegram:before {
+                background-image: url(../assets/icons/telegram.svg);
+            }
+
+
+            .mail:before {
+                background-image: url(../assets/icons/mail.svg);
+            }
+
+
+            .phone:before {
+                background-image: url(../assets/icons/phone.svg);
+            }
+
+
+            .linkedin:before {
+                background-image: url(../assets/icons/linkedIn.svg);
+            }
+
+
+        }
+    }
+
+    .header_wrapper-about-me {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 48%;
+        background-color: $background-name;
+        height: 23.5rem;
+        clip-path: polygon(0% 100%, 100% 100%, 100% 51%, 0% 0%);
+        border-radius: 0 127px 127px 0px;
+
+        display: flex;
+        align-items: center;
+
+        & h3 {
+            font-size: 2rem;
+            padding: 0 0 0 1rem;
+        }
+
+        .wrapper-contacts-about-me__about-me {
+            width: 90%;
+        }
+
+        .wrapper-contacts-about-me__list-about-me {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            font-size: 1.4rem;
+
+
+
+            .city {
+                padding: 0 0 0 10%;
+            }
+
+            .birthday {
+                padding: 0 0 0 20%;
+
+            }
+
+            .hobbies {
+                padding: 0 0 0 40%;
+            }
+
+            .city,
+            .birthday,
+            .hobbies {
+                span {
+                    color: #040c29;
+                }
+            }
+        }
+    }
+
+    .header__avatar {
+        position: absolute;
+        height: 15rem;
+        border-radius: 30rem;
+        border: 2rem white solid;
+        object-fit: contain;
+        left: 10rem;
+        top: 1rem;
+    }
+}
