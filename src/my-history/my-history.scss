@@ -1,0 +1,19 @@
+$background-name: rgba(45, 125, 136, 1);
+$background-contacts-about: rgba(4, 12, 41, 1);
+
+.my-history {
+    background-color: $background-contacts-about;
+    border-radius: 8rem;
+    font-size: 2rem;
+    padding: 1.5rem 2rem 4rem 2rem;
+    text-align: justify;
+    color: whitesmoke;
+
+    & h3 {
+        text-align: center;
+    }
+    & p {
+    max-width: 1280px;
+    margin: 0 auto;
+    }
+}
