@@ -1,5 +1,21 @@
-$background-name: rgba(45, 125, 136, 1);
-$background-contacts-about: rgba(4, 12, 41, 1);
+    $background-name: rgba(45, 125, 136, 1);
+    $background-contacts-about: rgba(4, 12, 41, 1);
+    $shadowHover: rgba(105, 185, 105, 0.56);
+    $fontSizeTitle:2.5rem;
+    $fontSizeText: 2rem;
+
+    $fontSizeTitle-1200:1.5rem;
+    $fontSizeText-1200: 1rem;
+
+                $fontSizeTitle-850: 1.3rem;
+                $fontSizeText-850: .8rem;
+
+
+    @mixin circleForBlocks {
+        border-radius: 30rem;
+        border: 2rem white solid;
+    }
+
 
 * {
     list-style: none;

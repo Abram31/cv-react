@@ -1,0 +1,82 @@
+@import '../basic.scss';
+
+.wrapper-my-projects {
+    position: relative;
+    color: whitesmoke;
+    background-color: $background-name;
+    border-radius: 8rem;
+    height: 37rem;
+    overflow: hidden;
+    transition: .4s;
+    cursor: pointer;
+    
+        &:hover .button-more-experience {
+            color: $shadowHover;
+                transform: scale(1.1);
+        }
+
+    .container-my-projects {
+        & h3 {
+            font-size: $fontSizeTitle;
+            text-align: center;
+        }
+
+        .list-projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 4rem;
+            max-width: 1280px;
+            margin: 0 auto 4rem auto;
+            
+
+            .project {
+                border: dotted rgb(24, 25, 24) 2px;
+                width: 20rem;
+                height: 20rem;
+                @include circleForBlocks;
+                // background-image: url(../assets/img/portfolio/portfolio.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                transition: .4s;
+                box-shadow: 2rem 1rem 1rem 0.5rem #00ffff5c;
+
+                &:hover {
+                    transform: rotateY(50deg) rotateX(30deg);
+                    box-shadow: 2rem 2rem 1rem 1rem $shadowHover;
+                }
+
+                &:active {
+                    transform: scale(.9);
+                    box-shadow: 2rem 2rem 1rem 1rem black;
+                }
+
+                & a {
+                    display: block;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .button-more-experience {
+        position: absolute;
+        font-size: $fontSizeTitle;
+        bottom: 0.5rem;
+        width: 100%;
+        cursor: pointer;
+        text-align: center;
+        transition: .4s;
+
+        &:active {
+            transform: scale(.9);
+        }
+
+        &:hover {
+            color: $shadowHover;
+            transform: scale(1.1);
+        }
+
+    }
+}

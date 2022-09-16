@@ -53,13 +53,15 @@ class Contacts extends Component {
 
     }
     render() {
+        const maxWidth = document.documentElement.clientWidth > 850;  
         return (
             <div className="header_wrapper-contacts">
                 <div className='wrapper-contacts__contacts'>
                     <h3>CONTACTS</h3>
                     <ul className='wrapper-contacts-about-me__list-contacts'>
                         {Object.entries(this.contacts).map((contact,index) => (
-                            <li key = {contact[0] + index } style = {{padding: `0 0 0 ${10 * index + 5}%`}} > 
+                            <li key={contact[0] + index} style={{ padding: maxWidth ? `0 0 0 ${10 * index + 5}%` :  `0 0 0 5%` }} > 
+                            
                             <a className={`list-contacts__contact ${contact[0]}`} href={contact[1].path}>{contact[1].title}</a> 
                             </li>
                         )

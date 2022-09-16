@@ -1,5 +1,4 @@
-$background-name: rgba(45, 125, 136, 1);
-$background-contacts-about: rgba(4, 12, 41, 1);
+@import '../basic.scss';
 
 
 
@@ -9,8 +8,8 @@ header {
     color: whitesmoke;
     font-family: 'Exo 2';
     letter-spacing: 0.15em;
-        border-radius: 8rem;
-            overflow: hidden;
+    border-radius: 8rem;
+    overflow: hidden;
 
     .header_wrapper-name-profession {
         position: absolute;
@@ -22,13 +21,41 @@ header {
         text-align: end;
 
         .name {
-            font-size: 3.2rem;
+            font-size: $fontSizeTitle;
             padding: 2rem 5rem 0 0;
         }
 
+
+
         .profession {
-            font-size: 2rem;
+            font-size: $fontSizeText;
             padding: 0 5rem 0 0;
+        }
+
+        @media (max-width:1050px) {
+            .name {
+                font-size: $fontSizeTitle-1200;
+            }
+
+            .profession {
+                font-size: $fontSizeText-1200;
+            }
+        }
+
+    }
+    @media (max-width:850px) {
+        .header_wrapper-name-profession {
+            text-align: center;
+
+            .name {
+                font-size: $fontSizeTitle-850;
+                padding: 2rem 0 0 0;
+            }
+            
+            .profession {
+                font-size: $fontSizeText-850;
+                padding: 0;
+            }
         }
     }
 
@@ -51,10 +78,19 @@ header {
 
         .wrapper-contacts__contacts {
             width: 100%;
+
             & h3 {
-                font-size: 2rem;
+                font-size: $fontSizeTitle;
             }
+
+            @media (max-width:1050px) {
+                & h3 {
+                    font-size: $fontSizeTitle-1200;
+                }
+            }
+            
         }
+        
 
         .wrapper-contacts-about-me__list-contacts {
             padding: 0;
@@ -70,14 +106,31 @@ header {
                 cursor: pointer;
                 transition: .4s;
                 transition-timing-function: linear;
+                word-break: break-all;
 
                 &:active {
                     transform: scale(0.8);
                 }
+
                 &:hover {
-                    transform: scale(1.1) ;
+                    transform: scale(1.1);
+                    color: $shadowHover;
                 }
 
+
+
+            }
+
+            @media (max-width:1050px) {
+                .list-contacts__contact {
+                    font-size: $fontSizeText-1200;
+                }
+            }
+
+            @media (max-width:850px) {
+                .list-contacts__contact {
+                    font-size: $fontSizeText-850;
+                }
             }
 
             .GitHub,
@@ -125,6 +178,16 @@ header {
 
         }
     }
+        @media (max-width:850px) {
+            .header_wrapper-contacts {
+                justify-content: flex-start;
+    
+                & h3 {
+                    font-size: $fontSizeTitle-850;
+                    padding: 14rem 0 0 5%;
+                }
+            }
+        }
 
     .header_wrapper-about-me {
         position: absolute;
@@ -139,8 +202,21 @@ header {
         align-items: center;
 
         & h3 {
-            font-size: 2rem;
+            font-size: $fontSizeTitle;
             padding: 0 0 0 1rem;
+        }
+
+        @media(max-width:1050px) {
+            & h3 {
+                font-size: $fontSizeTitle-1200;
+            }
+        }
+
+        @media(max-width:850px) {
+            & h3 {
+            padding: 50% 0 0 1rem;
+                font-size: $fontSizeTitle-850;
+            }
         }
 
         .wrapper-contacts-about-me__about-me {
@@ -165,7 +241,7 @@ header {
             }
 
             .hobbies {
-                padding: 0 0 0 40%;
+                padding: 0 0 0 30%;
             }
 
             .city,
@@ -175,16 +251,39 @@ header {
                     color: #040c29;
                 }
             }
+
+            @media (max-width:850px) {
+
+                .city,
+                .birthday,
+                .hobbies {
+                    padding: 0 0 0 5%;
+                }
+            }
+        }
+
+        @media (max-width:1050px) {
+            .wrapper-contacts-about-me__list-about-me {
+                font-size: $fontSizeText-1200;
+            }
         }
     }
 
     .header__avatar {
         position: absolute;
         height: 15rem;
-        border-radius: 30rem;
-        border: 2rem white solid;
+        @include circleForBlocks;
         object-fit: contain;
         left: 10rem;
         top: 1rem;
+    }
+
+    @media(max-width:850px) {
+        .header__avatar {
+            height: 8rem;
+            left: auto;
+            top: 8rem;
+            right: 1rem;
+        }
     }
 }

@@ -1,5 +1,4 @@
-$background-name: rgba(45, 125, 136, 1);
-$background-contacts-about: rgba(4, 12, 41, 1);
+@import '../basic.scss';
 
 .skills-section {
     position: relative;
@@ -25,14 +24,14 @@ $background-contacts-about: rgba(4, 12, 41, 1);
             padding: 10rem 0 0 1rem;
 
             & h3 {
-                font-size: 3.2rem;
+                font-size: $fontSizeTitle;
             }
 
             .wrapper-skills__skill {
                 position: relative;
                 display: flex;
                 justify-content: space-between;
-                font-size: 2rem;
+                font-size: $fontSizeText;
                 align-items: center;
                 cursor: pointer;
                 transition: .4s;
@@ -53,7 +52,6 @@ $background-contacts-about: rgba(4, 12, 41, 1);
                     transition: .4s;
 
                     &:hover {
-                        // color: black;
                         background-color: white;
                     }
                 }
@@ -70,7 +68,7 @@ $background-contacts-about: rgba(4, 12, 41, 1);
 
                 &:hover::after {
                     color: black;
-                    background-color: green;
+                    background-color: $shadowHover;
                 }
             }
         }
@@ -95,11 +93,11 @@ $background-contacts-about: rgba(4, 12, 41, 1);
             right: 0;
 
             & h3 {
-                font-size: 3.2rem;
+                font-size: $fontSizeTitle;
             }
 
             .language {
-                font-size: 2rem;
+                font-size: $fontSizeText;
 
                 & span {
                     color: $background-contacts-about;
