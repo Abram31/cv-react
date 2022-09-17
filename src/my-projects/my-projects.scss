@@ -5,15 +5,15 @@
     color: whitesmoke;
     background-color: $background-name;
     border-radius: 8rem;
-    height: 37rem;
+    height: 36rem;
     overflow: hidden;
     transition: .4s;
     cursor: pointer;
-    
-        &:hover .button-more-experience {
-            color: $shadowHover;
-                transform: scale(1.1);
-        }
+
+    &:hover .button-more-experience {
+        color: $shadowHover;
+        transform: scale(1.1);
+    }
 
     .container-my-projects {
         & h3 {
@@ -28,14 +28,13 @@
             gap: 4rem;
             max-width: 1280px;
             margin: 0 auto 4rem auto;
-            
+
 
             .project {
                 border: dotted rgb(24, 25, 24) 2px;
                 width: 20rem;
                 height: 20rem;
                 @include circleForBlocks;
-                // background-image: url(../assets/img/portfolio/portfolio.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -78,5 +77,86 @@
             transform: scale(1.1);
         }
 
+        &::before{
+            position: absolute;
+                width: 100%;
+                content: "⮟";
+                left: 0;
+                top: -2rem;
+        }
+
+    }
+}
+@media(max-width:1050px) {
+
+    .wrapper-my-projects {
+        height: 32rem;
+
+        .container-my-projects {
+            & h3 {
+                font-size: $fontSizeTitle-1050;
+            }
+
+            .list-projects {
+
+                .project {
+
+                }
+            }
+        }
+
+        .button-more-experience {
+            font-size: $fontSizeText-1050;
+        }
+    }
+}
+@media(max-width:850px) {
+
+    .wrapper-my-projects {
+        height: 20rem;
+
+        .container-my-projects {
+            & h3 {
+                font-size: $fontSizeTitle-850;
+            }
+
+            .list-projects {
+              
+                .project {
+                    border: none;
+                    width: 12rem;
+                    height: 12rem;
+
+                }
+            }
+        }
+
+        .button-more-experience {
+            font-size: $fontSizeText-500;
+        }
+    }
+}
+
+@media(max-width:500px) {
+
+    .wrapper-my-projects {
+        height: 9rem;
+        .container-my-projects {
+            & h3 {
+                font-size: $fontSizeTitle-500;
+            }
+        .list-projects {
+            
+            .project {
+                border: none;
+                width: 5rem;
+                height: 5rem;
+
+                }
+            }
+        }
+                .button-more-experience {
+                    font-size: $fontSizeText-500;
+                }
     }
 }

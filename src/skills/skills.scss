@@ -21,7 +21,7 @@
             flex-direction: column;
             gap: 1rem;
             width: 40%;
-            padding: 10rem 0 0 1rem;
+            padding: 12rem 0 0 1rem;
 
             & h3 {
                 font-size: $fontSizeTitle;
@@ -72,12 +72,60 @@
                 }
             }
         }
+
+        @media(max-width:1050px) {
+            .wrapper-skills {
+                padding: 26rem 0 0 1rem;
+                width: 60%;
+
+                & h3 {
+                    font-size: $fontSizeTitle-1050;
+                }
+
+                .wrapper-skills__skill {
+
+                    font-size: $fontSizeText-1050;
+
+                }
+            }
+        }
+
+        @media(max-width:850px) {
+            .wrapper-skills {
+
+                & h3 {
+                    font-size: $fontSizeTitle-850;
+                }
+
+                .wrapper-skills__skill {
+
+                    font-size: $fontSizeText-850;
+
+                }
+            }
+        }
+
+        @media(max-width:500px) {
+            .wrapper-skills {
+                padding: 12rem 0 0 1rem;
+
+                & h3 {
+                    font-size: $fontSizeTitle-500;
+                }
+
+                .wrapper-skills__skill {
+
+                    font-size: $fontSizeText-500;
+
+                }
+            }
+        }
     }
 
     .container-languages {
         position: absolute;
         width: 100%;
-        height: 60rem;
+        height: 100%;
         display: flex;
         background-color: $background-name;
         clip-path: polygon(135% 100%, 100% 100%, 100% 0%, 0% 0%);
@@ -87,7 +135,7 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
-            width: 50%;
+            width: 70%;
             top: 0;
             position: absolute;
             right: 0;
@@ -103,6 +151,66 @@
                     color: $background-contacts-about;
                 }
             }
+        }
+
+        @media(max-width: 1050px) {
+            .wrapper-languages {
+                width: 80%;
+
+                & h3 {
+                    font-size: $fontSizeTitle-1050;
+                }
+
+                .language {
+                    font-size: $fontSizeText-1050;
+
+                }
+            }
+        }
+
+        @media(max-width: 850px) {
+            .wrapper-languages {
+
+                & h3 {
+                    font-size: $fontSizeTitle-850;
+                }
+
+                .language {
+                    font-size: $fontSizeText-850;
+
+                }
+            }
+        }
+
+    }
+
+    @media(max-width: 500px) {
+        .container-languages {
+
+            clip-path: polygon(190% 100%, 100% 100%, 100% 0%, 0% 0%);
+
+            .wrapper-languages {
+
+                & h3 {
+                    font-size: $fontSizeTitle-500;
+                }
+
+                .language {
+                    font-size: $fontSizeText-500;
+
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width:500px) {
+    
+    .skills-section {
+        height: 40rem;
+        .container-skills {
+            clip-path: polygon(0% 100%, 100% 100%, 100% 58%, 0% 5%);
         }
     }
 }

@@ -12,8 +12,39 @@
         font-size: $fontSizeTitle;
         text-align: center;
     }
+
     & p {
-    max-width: 1280px;
-    margin: 0 auto;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:1050px) {
+    .my-history {
+        font-size: $fontSizeText-1050;
+
+        & h3 {
+            font-size: $fontSizeTitle-1050;
+        }
+    }
+}
+
+@media(max-width:850px) {
+    .my-history {
+        font-size: $fontSizeText-850;
+
+        & h3 {
+            font-size: $fontSizeTitle-850;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .my-history {
+        font-size: $fontSizeText-500;
+
+        & h3 {
+            font-size: $fontSizeTitle-500;
+        }
     }
 }

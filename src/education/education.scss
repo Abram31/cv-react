@@ -27,3 +27,34 @@
         }
     }
 }
+
+@media(max-width:1050px) {
+
+    .education {
+        font-size: $fontSizeText-1050;
+    
+        & h3 {
+            font-size: $fontSizeTitle-1050;
+        }
+    }
+}
+@media(max-width:850px) {
+
+    .education {
+        font-size: $fontSizeText-850;
+
+        & h3 {
+            font-size: $fontSizeTitle-850;
+        }
+    }
+}
+@media(max-width:500px) {
+
+    .education {
+        font-size: $fontSizeText-500;
+
+        & h3 {
+            font-size: $fontSizeTitle-500;
+        }
+    }
+}

@@ -77,13 +77,18 @@ class Button extends Component {
     }
 
     handleClick() {
+        const maxWidth = document.documentElement.clientWidth <= 500 ? '9rem' :
+            document.documentElement.clientWidth <= 850 ? '20rem' :
+                document.documentElement.clientWidth <= 1050 ? '32rem' :
+                    '36rem';
+
         const element = document.querySelector('.wrapper-my-projects')
         this.setState(prevState => ({
             isToggleOn: !prevState.isToggleOn
         }
         ));
-        
-            this.state.isToggleOn ? element.style.height = '38rem' : element.style.height = 'fit-content'
+
+        this.state.isToggleOn ? element.style.height = maxWidth : element.style.height = 'fit-content'
 
     }
 

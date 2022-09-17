@@ -34,15 +34,16 @@ header {
 
         @media (max-width:1050px) {
             .name {
-                font-size: $fontSizeTitle-1200;
+                font-size: $fontSizeTitle-1050;
             }
 
             .profession {
-                font-size: $fontSizeText-1200;
+                font-size: $fontSizeText-1050;
             }
         }
 
     }
+
     @media (max-width:850px) {
         .header_wrapper-name-profession {
             text-align: center;
@@ -51,9 +52,25 @@ header {
                 font-size: $fontSizeTitle-850;
                 padding: 2rem 0 0 0;
             }
-            
+
             .profession {
                 font-size: $fontSizeText-850;
+                padding: 0;
+            }
+        }
+    }
+
+    @media (max-width:500px) {
+        .header_wrapper-name-profession {
+            text-align: center;
+
+            .name {
+                font-size: $fontSizeTitle-500;
+                padding: 2rem 0 0 0;
+            }
+
+            .profession {
+                font-size: $fontSizeText-500;
                 padding: 0;
             }
         }
@@ -85,12 +102,24 @@ header {
 
             @media (max-width:1050px) {
                 & h3 {
-                    font-size: $fontSizeTitle-1200;
+                    font-size: $fontSizeTitle-1050;
                 }
             }
-            
+
+            @media (max-width:850px) {
+                & h3 {
+                    font-size: $fontSizeTitle-850;
+                }
+            }
+
+            @media (max-width:500px) {
+                & h3 {
+                    font-size: $fontSizeTitle-500;
+                }
+            }
+
         }
-        
+
 
         .wrapper-contacts-about-me__list-contacts {
             padding: 0;
@@ -102,6 +131,7 @@ header {
                 color: whitesmoke;
                 font-size: 1.4rem;
                 display: flex;
+                align-items: center;
                 gap: 1rem;
                 cursor: pointer;
                 transition: .4s;
@@ -123,7 +153,7 @@ header {
 
             @media (max-width:1050px) {
                 .list-contacts__contact {
-                    font-size: $fontSizeText-1200;
+                    font-size: $fontSizeText-1050;
                 }
             }
 
@@ -132,6 +162,7 @@ header {
                     font-size: $fontSizeText-850;
                 }
             }
+
 
             .GitHub,
             .instagram,
@@ -145,6 +176,25 @@ header {
                     background-size: contain;
                     height: 2rem;
                     width: 2rem;
+                }
+            }
+
+            @media (max-width:500px) {
+                .list-contacts__contact {
+                    font-size: $fontSizeText-500;
+                }
+
+                .GitHub,
+                .instagram,
+                .telegram,
+                .mail,
+                .phone,
+                .linkedin {
+                    &::before {
+                        content: '';
+                        height: 1rem;
+                        width: 1rem;
+                    }
                 }
             }
 
@@ -178,16 +228,27 @@ header {
 
         }
     }
-        @media (max-width:850px) {
-            .header_wrapper-contacts {
-                justify-content: flex-start;
-    
-                & h3 {
-                    font-size: $fontSizeTitle-850;
-                    padding: 14rem 0 0 5%;
-                }
+
+    @media (max-width:850px) {
+        .header_wrapper-contacts {
+            justify-content: flex-start;
+
+            & h3 {
+                font-size: $fontSizeTitle-850;
+                padding: 14rem 0 0 5%;
             }
         }
+    }
+
+    @media (max-width:500px) {
+        .header_wrapper-contacts {
+
+            & h3 {
+                font-size: $fontSizeTitle-500;
+                padding: 14rem 0 0 5%;
+            }
+        }
+    }
 
     .header_wrapper-about-me {
         position: absolute;
@@ -208,14 +269,21 @@ header {
 
         @media(max-width:1050px) {
             & h3 {
-                font-size: $fontSizeTitle-1200;
+                font-size: $fontSizeTitle-1050;
             }
         }
 
         @media(max-width:850px) {
             & h3 {
-            padding: 50% 0 0 1rem;
+                padding: 50% 0 0 1rem;
                 font-size: $fontSizeTitle-850;
+            }
+        }
+
+        @media(max-width:500px) {
+            & h3 {
+                padding: 50% 0 0 .5rem;
+                font-size: $fontSizeTitle-500;
             }
         }
 
@@ -264,8 +332,26 @@ header {
 
         @media (max-width:1050px) {
             .wrapper-contacts-about-me__list-about-me {
-                font-size: $fontSizeText-1200;
+                font-size: $fontSizeText-1050;
             }
+        }
+
+        @media (max-width:850px) {
+            .wrapper-contacts-about-me__list-about-me {
+                font-size: $fontSizeText-850;
+            }
+        }
+
+        @media (max-width:500px) {
+            .wrapper-contacts-about-me__list-about-me {
+                font-size: $fontSizeText-500;
+            }
+        }
+    }
+
+    @media (max-width:500px){
+        .header_wrapper-about-me{
+            width: 45%;
         }
     }
 
