@@ -12,12 +12,6 @@ import { Component } from 'react'
 
 
 
-
-
-
-
-
-
 const projectsList = {
     silverSeven: {
         path: 'http://silverseven.by/',
@@ -70,13 +64,16 @@ const projectsList = {
 class Button extends Component {
     constructor(props) {
         super(props);
-        this.state = { isToggleOn: false };
+        this.state = {
+            isToggleOn: false,
+        };
 
         // Эта привязка обязательна для работы `this` в колбэке.
         this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick() {
+
         const maxWidth = document.documentElement.clientWidth <= 500 ? '9rem' :
             document.documentElement.clientWidth <= 850 ? '20rem' :
                 document.documentElement.clientWidth <= 1050 ? '32rem' :
@@ -84,10 +81,9 @@ class Button extends Component {
 
         const element = document.querySelector('.wrapper-my-projects')
         this.setState(prevState => ({
-            isToggleOn: !prevState.isToggleOn
+            isToggleOn: !prevState.isToggleOn,
         }
         ));
-
         this.state.isToggleOn ? element.style.height = maxWidth : element.style.height = 'fit-content'
 
     }
@@ -100,6 +96,8 @@ class Button extends Component {
         );
     }
 }
+
+
 
 export const MyProjects = () => {
     return (
@@ -118,4 +116,46 @@ export const MyProjects = () => {
         </section>
 
     )
+}
+
+
+
+
+
+
+export class Test extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            ...props
+        }
+    }
+
+    handleClick = () => {
+        this.setState(prevState => ({
+            index: prevState.index+1,
+            // console.log(this.state.index);
+            // this.render()
+        })
+
+        )
+    }
+
+    render() {
+        // const { name, surname, index } = this.state
+
+        return (
+            <span style={{ height: '40rem', cursor: 'pointer' }}
+                onClick={this.handleClick}>{`Hello ${this.state.name} ${this.state.index}`}</span>
+        )
+    }
+}
+
+
+export const Props = {                    ////
+    name: 'Artem',
+    surname: "Abramovich",
+    index: 0
+
+
 }

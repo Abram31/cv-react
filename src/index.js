@@ -5,7 +5,7 @@ import { Education } from './education/education';
 // import reportWebVitals from './reportWebVitals';
 import { Header } from './header/header';
 import { MyHistory } from './my-history/my-history';
-import { MyProjects } from './my-projects/my-projects';
+import { MyProjects, Props, Test } from './my-projects/my-projects';
 import { Skills } from './skills/skills';
 
 const body = ReactDOM.createRoot(document.querySelector('body'))
@@ -16,6 +16,8 @@ body.render(
     <Skills/>
     <Education/>
     <MyProjects/>
+    <Test {...Props} />
+
   </React.StrictMode>
 );
 
