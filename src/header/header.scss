@@ -43,6 +43,7 @@ header {
         }
 
     }
+    
 
     @media (max-width:850px) {
         .header_wrapper-name-profession {
@@ -60,21 +61,7 @@ header {
         }
     }
 
-    @media (max-width:500px) {
-        .header_wrapper-name-profession {
-            text-align: center;
-
-            .name {
-                font-size: $fontSizeTitle-500;
-                padding: 2rem 0 0 0;
-            }
-
-            .profession {
-                font-size: $fontSizeText-500;
-                padding: 0;
-            }
-        }
-    }
+    
 
     .header_wrapper-contacts {
         position: absolute;
@@ -232,6 +219,8 @@ header {
     @media (max-width:850px) {
         .header_wrapper-contacts {
             justify-content: flex-start;
+        padding:0;
+                width: 51%;
 
             & h3 {
                 font-size: $fontSizeTitle-850;
@@ -373,3 +362,23 @@ header {
         }
     }
 }
+
+        @media (max-width:500px) {
+            header {
+                letter-spacing: initial;
+    
+                .header_wrapper-name-profession {
+                    text-align: center;
+    
+                    .name {
+                        font-size: $fontSizeTitle-500;
+                        padding: 2rem 0 0 0;
+                    }
+    
+                    .profession {
+                        font-size: $fontSizeText-500;
+                        padding: 0;
+                    }
+                }
+            }
+        }

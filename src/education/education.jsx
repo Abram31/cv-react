@@ -6,7 +6,7 @@ export const Education = () => {
             <h3> EDUCATION</h3>
             <ul>
                 <li>
-                    Rolling Scopes School studying as JavaScript developer. September 2021- Present.
+                    In september 2022 I got a certificate for completed JAVASCRIPT/FRONT-END of Rolling Scopes School studying.
                 </li>
                 <li>
                     In march 2022 I got a certificate for completed stage 0 of Rolling Scopes School studying.

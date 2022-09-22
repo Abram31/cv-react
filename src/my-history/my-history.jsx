@@ -4,12 +4,10 @@ export const MyHistory = () => {
     return (
         <section className='my-history'>
             <h3> {'My history as JavaScript developer'.toLocaleUpperCase()}</h3>
-            <p>From September 2021 I started learning JavaScript 
-                and other systems, frameworks necessary for profession 
-                JavaScript Developer. Now I have finally decided that I 
-                want to link my further career with software development, 
-                since I have always liked this direction and is currently 
-                the most promising in the whole world. Nowadays I am open to work as a JavaScript Developer</p>
+            <p>Since September 2021, I began to study JavaScript and other systems, frameworks necessary for the JavaScript Developer profession.</p>
+            <p> From May 2022 to September 2022, I worked for PROTUTOR company. I was engaged in the support of sites company, development, improvement of pages 
+                for applications and did the migration of applications to REACT. At the same time, I continued my studies at the Rolling Scopes School. </p>
+            <p> Nowadays I am currently open to work as a JavaScript developer</p>
         </section>
     )
 }

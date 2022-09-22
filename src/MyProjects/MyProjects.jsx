@@ -19,8 +19,7 @@ export class MyProjects extends Component {
         }
     }
 
-    handleClick = (value) => {
-        // console.log(value);
+    handleClick = () => {
         this.setState(prevState => ({
             isToggleOn: !prevState.isToggleOn,
             textButton: prevState.isToggleOn ? 'More projects...' : 'Hide projects',

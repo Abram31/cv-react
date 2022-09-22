@@ -11,7 +11,7 @@
     $fontSizeText-850: .8rem;
 
     $fontSizeTitle-500: 0.8rem;
-    $fontSizeText-500: .6rem;
+    $fontSizeText-500: .8rem;
 
 
 
@@ -34,6 +34,13 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+    }
+    @media(max-width: 500px) {
+    body,
+    #root {
+            padding: .2rem;
+            letter-spacing: initial;
+        }
     }
 
     ul {

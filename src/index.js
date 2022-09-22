@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './basic.scss';
 import { Education } from './education/education';
+import { Footer } from './Footer';
+import { contacts } from './header/contacts';
 // import './scroll-bar/scroll-bar';
 // import 'overlayscrollbars/styles';
 
@@ -18,6 +20,7 @@ body.render(
     <Skills/>
     <Education/>
     <MyProjects/>
+    <Footer contacts={contacts}/>
 
   </React.StrictMode>
 );

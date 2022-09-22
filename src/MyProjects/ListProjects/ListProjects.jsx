@@ -17,7 +17,6 @@ export const ListProjects = ({partProjects}) => {
                           <ButtonGoToApp className= 'button-link-to-app' linkToProject={project[1].path}/>
                       </div>
 
-                      {/* <a href={project[1].path}></a> */}
                   </li>
               )
           })}

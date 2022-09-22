@@ -1,0 +1,154 @@
+ @import '../basic.scss';
+
+ footer {
+     background-color: $background-contacts-about;
+     border-radius: 8rem;
+     font-size: $fontSizeText;
+     padding: 2rem;
+     text-align: justify;
+     color: whitesmoke;
+
+     .wrapper-links-footer {
+         display: flex;
+         justify-content: space-around;
+         flex-wrap: wrap;
+         gap: .4rem;
+
+         .list-contacts__contact {
+             display: flex;
+             gap: 1rem;
+             transition: .4s;
+
+             &:active {
+                 transform: scale(0.8);
+             }
+
+             &:hover {
+                 transform: scale(1.1);
+                 color: $shadowHover;
+             }
+         }
+
+         .GitHub,
+         .instagram,
+         .telegram,
+         .mail,
+         .phone,
+         .linkedin {
+             color: whitesmoke;
+
+             &::before {
+                 content: '';
+                 background-repeat: no-repeat;
+                 background-size: contain;
+                 height: 2rem;
+                 width: 2rem;
+             }
+         }
+
+         .GitHub::before {
+             background-image: url(../assets/icons/github.svg);
+         }
+
+         .instagram:before {
+             background-image: url(../assets/icons/instagram.svg);
+         }
+
+         .telegram:before {
+             background-image: url(../assets/icons/telegram.svg);
+         }
+
+
+
+     }
+ }
+
+
+
+
+
+ .mail:before {
+     background-image: url(../assets/icons/mail.svg);
+ }
+
+
+ .phone:before {
+     background-image: url(../assets/icons/phone.svg);
+ }
+
+
+ .linkedin:before {
+     background-image: url(../assets/icons/linkedIn.svg);
+ }
+
+
+
+
+
+
+
+ @media (max-width:1050px) {
+     footer {
+         padding: 0.8rem;
+         font-size: $fontSizeText-1050;
+
+         .wrapper-links-footer {
+             .list-contacts__contact {}
+
+             .GitHub,
+             .instagram,
+             .telegram,
+             .mail,
+             .phone,
+             .linkedin {
+                 &::before {}
+             }
+         }
+     }
+ }
+
+ @media (max-width:850px) {
+     footer {
+         padding: .6rem;
+         font-size: $fontSizeText-850;
+
+         .wrapper-links-footer {
+             margin: .5rem;
+
+             .list-contacts__contact {}
+
+             .GitHub,
+             .instagram,
+             .telegram,
+             .mail,
+             .phone,
+             .linkedin {
+                 &::before {}
+             }
+         }
+     }
+ }
+
+ @media (max-width:500px) {
+     footer {
+         padding: .4rem;
+         font-size: $fontSizeText-500;
+
+         .wrapper-links-footer {
+             .list-contacts__contact {}
+
+             .GitHub,
+             .instagram,
+             .telegram,
+             .mail,
+             .phone,
+             .linkedin {
+                 &::before {
+                     content: '';
+                     height: 1rem;
+                     width: 1rem;
+                 }
+             }
+         }
+     }
+ }
