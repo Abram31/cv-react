@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './basic.scss';
 import { Education } from './education/education';
-// import reportWebVitals from './reportWebVitals';
+// import './scroll-bar/scroll-bar';
+// import 'overlayscrollbars/styles';
+
 import { Header } from './header/header';
 import { MyHistory } from './my-history/my-history';
-import { MyProjects, Props, Test } from './my-projects/my-projects';
+import { MyProjects } from './MyProjects';
 import { Skills } from './skills/skills';
 
 const body = ReactDOM.createRoot(document.querySelector('body'))
@@ -16,7 +18,6 @@ body.render(
     <Skills/>
     <Education/>
     <MyProjects/>
-    <Test {...Props} />
 
   </React.StrictMode>
 );
