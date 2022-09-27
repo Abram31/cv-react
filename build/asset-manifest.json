@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cv-react/static/css/main.4425b50e.css",
-    "main.js": "/cv-react/static/js/main.09f7cdc8.js",
+    "main.css": "/cv-react/static/css/main.4d5b4bb2.css",
+    "main.js": "/cv-react/static/js/main.47dabcd0.js",
     "static/media/newsApi.png": "/cv-react/static/media/newsApi.9d108972dd4e59b9c1a7.png",
     "static/media/onlineStore.png": "/cv-react/static/media/onlineStore.d6cab167a06cc7b25c06.png",
     "static/media/movie-app.jpg": "/cv-react/static/media/movie-app.587246b90ba3420a2db8.jpg",
@@ -58,11 +58,11 @@
     "static/media/linkedIn.svg": "/cv-react/static/media/linkedIn.68148700c129c754d7e9.svg",
     "index.html": "/cv-react/index.html",
     "static/media/mail.svg": "/cv-react/static/media/mail.07d76685b6b417573331.svg",
-    "main.4425b50e.css.map": "/cv-react/static/css/main.4425b50e.css.map",
-    "main.09f7cdc8.js.map": "/cv-react/static/js/main.09f7cdc8.js.map"
+    "main.4d5b4bb2.css.map": "/cv-react/static/css/main.4d5b4bb2.css.map",
+    "main.47dabcd0.js.map": "/cv-react/static/js/main.47dabcd0.js.map"
   },
   "entrypoints": [
-    "static/css/main.4425b50e.css",
-    "static/js/main.09f7cdc8.js"
+    "static/css/main.4d5b4bb2.css",
+    "static/js/main.47dabcd0.js"
   ]
 }
