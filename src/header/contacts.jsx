@@ -12,7 +12,7 @@ export const contacts = {
         path: 'mailto:a447623993@gmail.com'
     },
     telegram: {
-        title: 'Telegram',
+        title: '@artsiomabramovich',
         path: 'https://t.me/artsiomabramovich'
     },
     instagram: {
