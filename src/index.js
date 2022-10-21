@@ -16,9 +16,9 @@ const body = ReactDOM.createRoot(document.querySelector('body'))
 body.render(
   <React.StrictMode>
     <Header />
-    <MyHistory/>
     <Skills/>
     <Education/>
+    <MyHistory/>
     <MyProjects/>
     <Footer contacts={contacts}/>
 
