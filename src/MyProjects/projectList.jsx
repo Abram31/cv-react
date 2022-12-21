@@ -10,8 +10,15 @@ import virtualKeyboard from '../assets/img/portfolio/virtual-keyboard.jpg'
 import rslang from '../assets/img/portfolio/rslang.jpg'
 import onlinestore from '../assets/img/portfolio/onlineStore.png'
 import newsapi from '../assets/img/portfolio/newsApi.png'
+import ProjectManagementSystem from '../assets/img/portfolio/ProjectManagementSystem.jpg'
 
 export const projectsList = {
+    PMSystem: {
+        path: 'https://abram31.github.io/project-management-app//',
+        img: ProjectManagementSystem,
+        description: 'You can create and customize multiple views by filtering, sorting, and grouping. Adding custom fields to track metadata specific to your work. The project provides flexible features you can customize to your team’s needs and processes.',
+        technology: 'React, TypeScript, HTML, SCSS, WebPack, GIT'
+    },
     RSLang: {
         path: 'https://abram31.github.io/rslang/',
         img: rslang,
